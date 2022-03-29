@@ -62,12 +62,12 @@
           <!-- Изображение background -->
           <div class="hero-background animate__animated animate__fadeInLeft animate__slow">
             <div class="hero-btn animate__animated animate__fadeInUp animate__slow">
-              <a href="#" class="btn btn-primary">
+              <a href="#" class="btn btn-primary btn-sign_up">
                 <img width="15" src="img/icons/calendar-2-512.png" alt="ticket" class="btn-icon">
                 <span class="btn-text">Записаться</span>
               </a>
 
-              <a href="#" class="btn btn-primary">
+              <a href="#" class="btn btn-primary btn-call">
                 <img width="15" src="img/icons/phone-512.png" alt="btn-icon" class="btn-icon">
                 <span class="btn-text">Заказать обратный звонок</span>
               </a>
@@ -75,12 +75,10 @@
 
           </div>
         </div>
-
-
       </header>
 
       <section class="services section" id="services">
-        <h2 class="section-title">Мы предостовляем услуги:</h2>
+        <h2 class="section-title">Мы предостовляем услуги</h2>
 
         <div class="service-cards">
           <!-- 1я карточка -->
@@ -153,7 +151,6 @@
 
         </div>
       </section>
-
 
       <section id="projects" class="projects section">
         <h2 class="section-title">Наши последние проекты</h2>
@@ -332,6 +329,35 @@
             <div class="work_mode">
               <div class="workday">
                 <p class="weekday">Понедельник</p>
+                <p class="time">11:00—21:00</p>
+              </div>
+              <div class="workday">
+                <p class="weekday">Вторник</p>
+                <p class="time">11:00—21:00</p>
+              </div>
+              <div class="workday">
+                <p class="weekday">Среда</p>
+                <p class="time">11:00—21:00</p>
+              </div>
+              <div class="workday">
+                <p class="weekday">Четверг</p>
+                <p class="time">11:00—21:00</p>
+              </div>
+              <div class="workday">
+                <p class="weekday">Пятница</p>
+                <p class="time">11:00—21:00</p>
+              </div>
+              <div class="workday">
+                <p class="weekday">Суббота</p>
+                <p class="time">11:00—21:00</p>
+              </div>
+              <div class="workday">
+                <p class="weekday">Воскресенье</p>
+                <p class="time">Выходной</p>
+              </div>
+
+              <!--   <div class="workday">
+                <p class="weekday">Понедельник</p>
                 <p class="weekday">Вторник</p>
                 <p class="weekday">Среда</p>
                 <p class="weekday">Четверг</p>
@@ -347,7 +373,7 @@
                 <p class="time">11:00—21:00</p>
                 <p class="time">11:00—19:00</p>
                 <p class="time">Выходной</p>
-              </div>
+              </div> -->
             </div>
 
             <div class="connect">
@@ -369,23 +395,52 @@
               </script>
           </div>
         </div>
+
         <div class="form">
           <form action="#" class="contacts-form">
             <h4 class="form-title">Можете оставить заявку, мы перезвоним вам сегодня</h4>
-            <input type="text" class="input input-name" placeholder="Ваше имя">
-            <input type="text" class="input input-phone" placeholder="Ваш телефон">
-            <button class="button form-button">Бесплатная консультация</button>
+            <input type="text" class="input input-name" placeholder="Ваше имя" required>
+            <input type="text" class="input input-phone" placeholder="Ваш телефон" required>
+            <input type="submit" class="button form-button">
             <a href="#" class="contacts-policy">Политика конфиденциальности</a>
           </form>
         </div>
 
       </section>
 
-
-
-
     </div><!-- ./container -->
   </main>
+
+  <div class="modal">
+
+    <div class="modal__block">
+      <button class="modal__close">✘</button>
+      <form action="#" class="modal__form">
+        <h4 class="form-title modal__subtitle">Записаться на ремонт</h4>
+        <span style="text-align:center; font-size: 15px; margin-bottom: 3px;">Желаемая дата</span>
+        <input type="datetime-local" class="input input-date" required>
+        <input type="text" class="input input-auto" placeholder="Марка автомобиля" required>
+        <input type="text" class="input input-name" placeholder="Ваше имя" required>
+        <input type="tel" class="input input-phone" placeholder="Ваш телефон" required>
+        <input type="submit" class="modal-button form-button">
+        <!--  <a href="#" class="contacts-policy">Политика конфиденциальности</a> -->
+      </form>
+    </div>
+
+  </div>
+
+
+  <div class="modal-call">
+    <div class="modal__block">
+      <button class="modal__close">✘</button>
+      <form action="#" class="modal__form">
+        <h4 class="form-title modal__subtitle">Можете оставить заявку, мы перезвоним Вам сегодня!</h4>
+        <input type="text" class="input input-name" placeholder="Ваше имя" required>
+        <input type="tel" class="input input-phone" placeholder="Ваш телефон" required>
+        <input class="modal-button form-button" type="submit" placeholder="Обратный звонок">
+      </form>
+    </div>
+  </div>
 
   <script src="js/slider/swiper-bundle.min.js"></script>
 </body>
