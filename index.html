@@ -10,7 +10,6 @@
   <link rel="stylesheet" href="css/style.css">
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Jura:wght@700&display=swap" rel="stylesheet">
-  <!-- <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> -->
   <!-- favicon -->
   <link rel="icon" href="img/favicon.ico" type="image/x-icon">
   <!-- JS -->
@@ -415,13 +414,16 @@
 
     <div class="modal__block">
       <button class="modal__close">✘</button>
-      <form action="#" class="modal__form">
+      <form class="modal__form" action="/php/telegram.php" method="POST">
         <h4 class="form-title modal__subtitle">Записаться на ремонт</h4>
         <span style="text-align:center; font-size: 15px; margin-bottom: 3px;">Желаемая дата</span>
-        <input type="datetime-local" class="input input-date" required>
-        <input type="text" class="input input-auto" placeholder="Марка автомобиля" required>
-        <input type="text" class="input input-name" placeholder="Ваше имя" required>
-        <input type="tel" class="input input-phone" placeholder="Ваш телефон" required>
+        <input class="input input-date" type="date" name="user_date" required>
+        <input class="input input-auto" type="text" name="user_auto" placeholder="Марка автомобиля" required>
+        <input class="input input-name" type="text" name="user_name" pattern="^[А-Яа-яЁё\s]+$" placeholder="Ваше имя"
+          required>
+        <input class="input input-phone" type="tel" minlength="11" maxlength="12"
+          pattern="[\+]*[7-8]{1}\s?[\(]*9[0-9]{2}[\)]*\s?\d{3}[-]*\d{2}[-]*\d{2}" name="user_phone"
+          placeholder="Ваш телефон" required>
         <input type="submit" class="modal-button form-button">
         <!--  <a href="#" class="contacts-policy">Политика конфиденциальности</a> -->
       </form>
@@ -433,10 +435,13 @@
   <div class="modal-call">
     <div class="modal__block">
       <button class="modal__close">✘</button>
-      <form action="#" class="modal__form">
+      <form action="/php/telegram_call.php" class="modal__form" method="POST">
         <h4 class="form-title modal__subtitle">Можете оставить заявку, мы перезвоним Вам сегодня!</h4>
-        <input type="text" class="input input-name" placeholder="Ваше имя" required>
-        <input type="tel" class="input input-phone" placeholder="Ваш телефон" required>
+        <input class="input input-name" type="text" name="user_name-call" pattern="^[А-Яа-яЁё\s]+$"
+          placeholder="Ваше имя" required>
+        <input class="input input-phone" type="tel" minlength="11" maxlength="12"
+          pattern="[\+]*[7-8]{1}\s?[\(]*9[0-9]{2}[\)]*\s?\d{3}[-]*\d{2}[-]*\d{2}" name="user_phone-call"
+          placeholder="Ваш телефон" required>
         <input class="modal-button form-button" type="submit" placeholder="Обратный звонок">
       </form>
     </div>
