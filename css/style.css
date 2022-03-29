@@ -398,12 +398,12 @@ margin-right: 0;
   cursor: pointer;
 }
 .input-name {
-  background-image: url('/img/form-icon/user-icon.svg');
+  background-image: url('../img/form-icon/user-icon.svg');
   background-repeat: no-repeat;
   background-position: center left  20px;
 }
 .input-phone {
-  background-image: url('/img/form-icon/phone-icon.svg');
+  background-image: url('../img/form-icon/phone-icon.svg');
   background-repeat: no-repeat;
   background-position: center left  20px;
 }
