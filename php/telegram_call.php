@@ -9,7 +9,7 @@ $token = "5224959568:AAGa-GIzNdaM60y09zbf6_zfcLQfq6XpHO0";
 $chat_id = "-772111884";
 
 $arrCall = array(
-  'Перезвон!',
+  'Перезвон!' =>'',
   'Клиент: ' => $nameCall,
   'Телефон: ' => $phoneCall,
 );

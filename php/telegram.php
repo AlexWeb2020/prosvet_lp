@@ -10,7 +10,7 @@ $phone = $_POST['user_phone'];
 $token = "5224959568:AAGa-GIzNdaM60y09zbf6_zfcLQfq6XpHO0";
 $chat_id = "-772111884";
 $arr = array(
-  'Запись!',
+  'Запись!'=> '',
   'Дата: ' => $date,
   'Автомобиль: ' => $auto,
   'Клиент: ' => $name,
