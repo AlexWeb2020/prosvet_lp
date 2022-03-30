@@ -297,7 +297,7 @@ margin-right: 0;
 /* ===================== */
 .main-address{
   display: flex;
-  justify-content:center;
+  justify-content:space-around;
 }
 .address-column{
   display: flex;
@@ -347,13 +347,12 @@ margin-right: 0;
   margin: 0;
 }
 .maps{  
-  /* border: 1px solid red; */
+  border: 1px solid red;
   width: 400px;
   height: 400px;
 }
 .connect{
   display: flex;
-  align-items: center;
   justify-content: space-around;
   margin-top: 30px;
 }
@@ -544,6 +543,7 @@ margin-right: 0;
 
 
 
+
 @media(max-width: 1440px){
   .service-card{
     height: 350px;
@@ -564,14 +564,11 @@ margin-right: 0;
   }
   .card-title{
     font-size: 18px;
+    margin-bottom: 30px;
   }
 }
 
 @media(max-width: 830px){
-   .connect{
-    display: flex;
-    flex-direction: column-reverse;
-  }
   .header-phone_number{
     margin-bottom: 15px;
   }
@@ -591,8 +588,12 @@ margin-right: 0;
   }
   .project-image {
     margin-bottom: 46px;
+    margin-right: 0px;
   }
-  
+  .project-title{
+    text-align: center;
+    margin-bottom: 25px;
+  }  
 }
 @media (max-width: 674px){
    .hero-title{
@@ -601,6 +602,10 @@ margin-right: 0;
    .btn-text{
     font-size: 18px;
   }
+  .service-card{
+    margin: 0;
+    margin-bottom: 15px;
+  }
   
 }
 @media (max-width: 618px){
@@ -608,6 +613,9 @@ margin-right: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+  .address-column{
+    margin-right: 0;
   }
   .maps{
     margin-top: 20px;
@@ -629,30 +637,106 @@ margin-right: 0;
   .hero-btn{
     display: flex;
     flex-direction: column;
-    margin-top: 0px;
   }
   .btn-primary{
     margin-bottom: 10px;
   }
   .btn-text{
-    font-size: 12px;
-  }
-  .project-image{
-    height: 300px;
+    font-size: 18px;
   }
 }
 @media (max-width: 500px){
-  .hero-title{
+    .hero-title{
     font-size: 24px;
   }
-  .maps{
-    margin-top: 20px;
-    width: 300px;
-    height: 300px;
+  .project-image{
+    height: 350px;
   }
 }
 @media (max-width: 430px){
-    .hero-title{
+  .hero{
+    min-height: 500px;
+  }
+  .hero-title{
     font-size: 20px;
+  }
+  .nav-menu{
+    text-align: center;
+    align-items: center;
+  }
+  .nav-menu-link{
+    font-size: 14px;
+  }
+  .hero-background{
+    display: none;
+  }
+  .project-image{
+    margin-right: 0;
+    height: 300px;
+  }
+  .project-title{
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  .project-time, .project-coast {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+  .project-pagination {
+    margin-top: 0;
+  } 
+  .maps{
+    height: 300px;
+    max-width: 300px;
+  }
+}
+@media (max-width: 361px){
+  .hero{
+    min-height: 500px;
+  }
+  .nav-menu{
+    text-align: center;
+    align-items: center;
+  }
+  .hero-background{
+    display: none;
+  }
+  .btn-text{
+    font-size: 16px;
+  }
+  .project-image{
+    margin-right: 0;
+    height: 300px;
+  }
+  .project-time, .project-coast {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+  .project-pagination {
+    margin-top: 0;
+  } 
+  .maps{
+    height: 300px;
+    max-width: 300px;
+  }
+}
+@media (max-width: 320px){
+  .nav-menu-link{
+    font-size: 12px;
+  }
+  .hero-title{
+    font-size: 16px;
+  }
+  .btn-text {
+    font-size: 14px;
+  }
+  .section-title{
+    font-size: 30px;
+  }
+  .service-card{
+    height: 250px;
+  }
+  .card-title{
+    margin-bottom: 0;
   }
 }
