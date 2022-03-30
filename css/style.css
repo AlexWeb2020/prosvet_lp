@@ -642,8 +642,11 @@ margin-right: 0;
     .hero-title{
     font-size: 24px;
   }
+  .btn-text{
+    font-size: 12px;
+  }
   .project-image{
-    height: 350px;
+    height: 300px;
   }
   .maps{
     margin-top: 20px;
